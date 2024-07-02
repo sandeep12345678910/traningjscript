@@ -305,33 +305,33 @@
 //     console.log("Invalid weather");
 // }
 
-let status = 200;
+// let status = 200;
 
-switch (status) {
-  case 201:
-    console.log("Created");
-    break;
+// switch (status) {
+//   case 201:
+//     console.log("Created");
+//     break;
 
-  case 400:
-    console.log("Bad Request");
-    break;
+//   case 400:
+//     console.log("Bad Request");
+//     break;
 
-  case 401:
-    console.log("Unauthorized");
-    break;
+//   case 401:
+//     console.log("Unauthorized");
+//     break;
 
-  case 403:
-    console.log("Forbidden");
-    break;
+//   case 403:
+//     console.log("Forbidden");
+//     break;
 
-  case 200:
-    console.log("Ok");
-    break;
+//   case 200:
+//     console.log("Ok");
+//     break;
 
-  case 500:
-    console.log("Internal server error");
-    break;
+//   case 500:
+//     console.log("Internal server error");
+//     break;
 
-  default:
-    console.log("Error");
-}
+//   default:
+//     console.log("Error");
+// }
