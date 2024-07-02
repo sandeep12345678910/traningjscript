@@ -335,3 +335,95 @@
 //   default:
 //     console.log("Error");
 // }
+
+
+// //Array
+// let n = [2,3,4,5,6];
+// console.log(n);
+// console.log(n[3]);
+
+// const arr = [3,4,5,6,7,8,9];
+
+
+
+// //splice
+// const result = arr.splice(1,3); //removes the arrray elements from 1 to 3. and returns them. main array is affected. i.e arr is affected
+// console.log(arr);
+// console.log(result);
+
+// const output = arr.slice(1,3); // returns only the 1st and 2nd index elements. main array i.e arr is not affected
+// console.log(output); // output = [4,5]
+// console.log(arr)
+
+// // lastIndexOf
+// let output = arr.lastIndexOf(3);
+// console.log(output);
+
+// //indexOf
+// let output = arr.indexOf(3)
+// console.log(output);
+
+// console.log(arr.length);
+// console.log(arr);
+//  const str = 'Sandeep';
+//  console.log(str.length);
+
+// arr.push(12); // adds element at the last of the array
+// console.log(arr);
+
+// arr.unshift(16); // adds element at the first of the array
+// console.log(arr);
+
+// arr.shift(); // removes element from the first of the array
+// console.log(arr);
+
+// arr.pop(); // removes element from the last of the array
+// console.log(arr);
+
+// console.log(arr.includes(5));
+
+// const output = ['A', 'B', 'C', 'D'];
+// console.log(output.join(',')); // adds separator for the given array elements
+// console.log(arr.join('-'))
+
+
+// let arr = []
+// let sum = 0;
+
+// for (let i = 1; i<= 10; i++){
+//   arr.push(i);
+// }
+
+// console.log(arr);
+
+// for(let i = 1; i < arr.length; i++){
+//   sum += arr[i];
+// }
+
+// let result = sum * 2;
+
+// console.log(`The sum of arr is : ${sum}`);
+// console.log(  `The multiply of sum is: ${result}`);
+
+// Object 
+
+const person = {
+  name: 'Sandeep',
+  age: 20,
+  college: 'kbc',
+  isMarried: false,
+  address: {
+    street: 'Kalanki',
+    city: 'kathmandu',
+    country: 'Nepal',
+  },
+  getAddress: function () {
+    return this.address;
+  },
+}
+
+const {name, age, college, isMarried, address} = person;
+console.log(name, age, college, isMarried, address);
+
+console.log(person.name);
+console.log(person['age']);
