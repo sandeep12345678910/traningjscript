@@ -467,7 +467,6 @@ function calculateTotal(cartItems, taxRate) {
   return total;
 }
 
-
 let cart = [
   { name: 'Dr Martin', price: 8000, quantity: 1 },
   { name: 'Dr Sandeep', price: 4000, quantity: 2 },
