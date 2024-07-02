@@ -405,25 +405,74 @@
 // console.log(`The sum of arr is : ${sum}`);
 // console.log(  `The multiply of sum is: ${result}`);
 
-// Object 
 
-const person = {
-  name: 'Sandeep',
-  age: 20,
-  college: 'kbc',
-  isMarried: false,
-  address: {
-    street: 'Kalanki',
-    city: 'kathmandu',
-    country: 'Nepal',
-  },
-  getAddress: function () {
-    return this.address;
-  },
+//#######################################
+// // Object 
+
+// const person = {
+//   name: 'Sandeep',
+//   age: 20,
+//   college: 'kbc',
+//   isMarried: false,
+//   address: {
+//     street: 'Kalanki',
+//     city: 'kathmandu',
+//     country: 'Nepal',
+//   },
+//   getAddress: function () {
+//     return this.address;
+//   },
+// }
+
+// const {name, age, college, isMarried, address} = person;
+// console.log(name, age, college, isMarried, address);
+
+// console.log(person.name);
+// console.log(person['age']);
+
+
+//#########################  FUNCTIONS 
+
+// function greet(name) {
+//   console.log(`Hello ${name}`);
+// }
+// greet('Sandeep');
+
+// const eat = function (food) {
+//   console.log(`I am eating ${food}`);
+// }
+// eat('Pizza');
+
+// //Arrow function
+// const wave = (name) => {
+//   console.log(`i'm waving at ${name}`);
+// }
+// wave('karan');
+
+// function myFunc(radius) {
+//   return Math.PI * radius * radius;
+// }
+
+// const output = myFunc(5);
+// console.log(`The radius of the circle is : ${output}`);
+
+//Calculate Total
+function calculateTotal(cartItems, taxRate) {
+  let total = 0;
+  for (let i = 0; i <= cartItems.length; i++) {
+    total += cartItems[i].price * cartItems[i].quantity;
+  }
+
+  total += total * taxRate;
+  return total;
 }
 
-const {name, age, college, isMarried, address} = person;
-console.log(name, age, college, isMarried, address);
 
-console.log(person.name);
-console.log(person['age']);
+let cart = [
+  { name: 'Dr Martin', price: 8000, quantity: 1 },
+  { name: 'Dr Sandeep', price: 4000, quantity: 2 },
+];
+
+const result = calculateTotal(cart, 0.2);
+console.log(`Your full and final payment is : ${result}`);
+
