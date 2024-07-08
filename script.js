@@ -336,142 +336,309 @@
 //     console.log("Error");
 // }
 
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`2 * ${i} = ${2 * i}`);
+// }
+// for (let i = 0 ; i <20; i ++) {
+//   console.log('the even number are:${i}');
 
-// //Array
-// let n = [2,3,4,5,6];
-// console.log(n);
-// console.log(n[3]);
+// }
 
-// const arr = [3,4,5,6,7,8,9];
+/*
+====
+ARRAY
+====
+*/
 
-
-
-// //splice
-// const result = arr.splice(1,3); //removes the arrray elements from 1 to 3. and returns them. main array is affected. i.e arr is affected
+// const arr = [1, 2, 3, 4, 5];
 // console.log(arr);
+// console.log(arr[2]);
+// console.log(typeof arr)
+
+// let arr = [1, 2, 3, 4, 5, 3]; //data structure
+
+//Splice //removes the data from array
+// arr.splice(1,3);
+// console.log(arr);
+
+//slice //prints the defined set
+// let sliced = arr.slice(1,3); //prints index 1 and 2
+// console.log(sliced);
+
+// check index
+// console.log(arr.indexOf(3))
+// console.log(arr.lastIndexOf(3))
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// //push
+// let newArr = arr.push(12);
+// console.log(arr);
+
+// //pop
+// arr.pop(12);
+// console.log(arr);
+
+// //push
+// arr.shift(12);
+// console.log(arr);
+
+// //pop
+// arr.unshift(12);
+// console.log(arr);
+
+//includes
+// if (arr.includes(4)){
+//     console.log("4 is present in array")
+// }
+
+// let result = arr.includes(4);
 // console.log(result);
 
-// const output = arr.slice(1,3); // returns only the 1st and 2nd index elements. main array i.e arr is not affected
-// console.log(output); // output = [4,5]
-// console.log(arr)
+//Join
+// const output = ["JS", "is", "Fun"];
+// console.log(output.join(" "));
 
-// // lastIndexOf
-// let output = arr.lastIndexOf(3);
-// console.log(output);
+//////
 
-// //indexOf
-// let output = arr.indexOf(3)
-// console.log(output);
-
-// console.log(arr.length);
-// console.log(arr);
-//  const str = 'Sandeep';
-//  console.log(str.length);
-
-// arr.push(12); // adds element at the last of the array
-// console.log(arr);
-
-// arr.unshift(16); // adds element at the first of the array
-// console.log(arr);
-
-// arr.shift(); // removes element from the first of the array
-// console.log(arr);
-
-// arr.pop(); // removes element from the last of the array
-// console.log(arr);
-
-// console.log(arr.includes(5));
-
-// const output = ['A', 'B', 'C', 'D'];
-// console.log(output.join(',')); // adds separator for the given array elements
-// console.log(arr.join('-'))
-
-
-// let arr = []
+// let arr = [];
 // let sum = 0;
 
-// for (let i = 1; i<= 10; i++){
+// for (let i = 1; i <= 10; i++) {
 //   arr.push(i);
 // }
-
 // console.log(arr);
 
-// for(let i = 1; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //   sum += arr[i];
 // }
+// console.log(`The sum of the given numbers is ${sum}`);
 
-// let result = sum * 2;
-
-// console.log(`The sum of arr is : ${sum}`);
-// console.log(  `The multiply of sum is: ${result}`);
-
-
-//#######################################
-// // Object 
+/////OBJECTS IN JS
 
 // const person = {
-//   name: 'Sandeep',
-//   age: 20,
-//   college: 'kbc',
-//   isMarried: false,
+//   name: "Ashish",
+//   age: 21,
 //   address: {
-//     street: 'Kalanki',
-//     city: 'kathmandu',
-//     country: 'Nepal',
+//     street: "Satungal",
+//     city: "Kathamandu",
+//     country: "Nepal",
 //   },
-//   getAddress: function () {
-//     return this.address;
+//   occupation: "Student",
+//   education: "BCA",
+//   isMarried: false,
+//   greet: function () {
+//     console.log(`Hello, I am ${this.name} and i am ${this.age} years old!`);
 //   },
+// };
+// person.greet();
+
+// //Destructuring
+// const {
+//   name,
+//   age,
+//   isMarried,
+//   address: { street, city, country },
+// } = person;
+
+// console.log(name, age, isMarried, street, city, country);
+
+////Function in JavaScript
+// function myFunction(){
+//     console.log("Hey Function");
 // }
 
-// const {name, age, college, isMarried, address} = person;
-// console.log(name, age, college, isMarried, address);
+// myFunction();
 
-// console.log(person.name);
-// console.log(person['age']);
-
-
-//#########################  FUNCTIONS 
-
-// function greet(name) {
-//   console.log(`Hello ${name}`);
+// function sum(a, b) {
+//   return a + b;
 // }
-// greet('Sandeep');
 
-// const eat = function (food) {
-//   console.log(`I am eating ${food}`);
-// }
-// eat('Pizza');
+// console.log(`The sum is ${sum(2, 4)}`);
 
-// //Arrow function
-// const wave = (name) => {
-//   console.log(`i'm waving at ${name}`);
-// }
-// wave('karan');
-
-// function myFunc(radius) {
+// function Radius(radius) {
 //   return Math.PI * radius * radius;
 // }
 
-// const output = myFunc(5);
-// console.log(`The radius of the circle is : ${output}`);
+// console.log(`The area of circle is ${Math.round(Radius(6), 4)}`);
 
-//Calculate Total
-function calculateTotal(cartItems, taxRate) {
-  let total = 0;
-  for (let i = 0; i <= cartItems.length; i++) {
-    total += cartItems[i].price * cartItems[i].quantity;
-  }
+// Function to calculate the sum of provided numbers
+// function calculateTotal(...numbers) {
+//     return numbers.reduce((sum, number) => sum + number, 0);
+// }
 
-  total += total * taxRate;
-  return total;
+// // Example usage
+// const sum = calculateTotal(1, 2, 3, 4, 5);
+// console.log(`The sum is: ${sum}`);
+
+// function calculateTotal(cartItems, taxRate) {
+//   let total = 0;
+//   for (i = 0; i < cartItems.length; i++) {
+//     total += cartItems[i].price * cartItems[i].quantity;
+//   }
+//   total += total * taxRate;
+//   return total;
+// }
+
+// let cart = [
+//   { name: "Dr Martin", price: 8000, quantity: 2 },
+//   { name: "SB Dunk", price: 4000, quantity: 3 },
+// ];
+
+// const result = calculateTotal(cart, 0.02);
+
+// console.log(`your full and final payment is:${result}`);
+
+// function convert() {
+//   const meterInput = document.getElementById("meterInput").value;
+//   const result = meterInput * 3.28084;
+//   document.getElementById(
+//     "result"
+//   ).textContent = `${meterInput} meters is equal to ${result.toFixed(2)} feet`;
+// }
+
+// function myFunction(){
+//   let a = prompt("Enter first number?");
+//   let b = prompt("Enter second number?");
+
+//   let result = Number(a) + Number(b);
+//   if(result){
+//     alert(`The sum of two numbers is: ${result}`);
+//   }
+
+// }
+
+// myFunction();
+
+//Global Scoping
+// var x = 90;
+// let y = 70;
+// const z = 30;
+
+// function myPrint() {
+//   console.log(x, y, z);
+// }
+
+// myPrint();
+
+//Function Scope
+// function myPrint() {
+//   var x = 90;
+//   let y = 70;
+//   const z = 30;
+//   console.log(x, y, z);
+// }
+
+// myPrint();
+
+//Scope defined inside a block of conditional statement
+//Block Scope
+// function myPrint() {
+//   if (true) {
+//     var x = 90;
+//     let y = 70;
+//     const z = 30;
+//     console.log(y);
+//     console.log(z);
+//   }
+//   console.log(x);
+// }
+
+// myPrint();
+
+//var can be used as a function scope
+//let and const cannot be used as function scope, it can only be ued inside the defined block
+
+//////DOM
+// console.log(document.body);
+
+//Id Selector
+let result = document.getElementById("hello");
+
+result.innerText = "I Love JS!";
+result.style.backgroundColor = "red";
+result.style.color = "white";
+result.style.textAlign = "center";
+console.log(result);
+
+//Class Selector
+let output = document.getElementsByClassName("myClass")[0];
+output.innerText = "How are you?";
+output.style.backgroundColor = "aqua";
+output.style.color = "green";
+output.style.textAlign = "center";
+console.log(output);
+
+//Class Selector
+let ans = document.getElementsByClassName("myClass");
+ans[1].innerText = "Who are you?";
+ans[1].style.backgroundColor = "blue";
+ans[1].style.color = "white";
+ans[1].style.textAlign = "center";
+console.log(ans);
+
+//Tag Selector
+let res = document.getElementsByTagName("span");
+
+res[0].style.backgroundColor = "brown";
+res[0].style.color = "white";
+res[0].style.textAlign = "center";
+
+console.log(res);
+
+let newRes = document.getElementsByTagName("span");
+
+newRes[1].style.backgroundColor = "aquamarine";
+newRes[1].style.color = "red";
+newRes[1].style.textAlign = "center";
+
+console.log(newRes);
+
+//////
+
+let x = document.getElementsByName("email");
+// let y = document.getElementsByName("password");
+console.log(x);
+
+let y = document.querySelector("#add");
+y.style.backgroundColor = "blue";
+y.style.color = "white";
+y.style.padding = "2vmax 4vmax";
+y.style.cursor = "pointer";
+y.style.border = "none";
+
+y.setAttribute("class", "meroClass");
+
+let z = document.querySelector(".delete");
+z.style.backgroundColor = "red";
+z.style.color = "white";
+z.style.padding = "2vmax 4vmax";
+z.style.cursor = "pointer";
+z.style.border = "none";
+
+// y.addEventListener("click", () => {
+//   let display = document.createElement("h1");
+//   display.innerText = "This is a new H1";
+//   document.body.append(display);
+// });
+
+function addTask() {
+  let display = document.createElement("h1");
+  display.innerText = "This is a new H1";
+  document.body.append(display);
+}
+y.onclick = addTask;
+
+function deleteTask(){
+  let h1 = document.querySelector("h1");
+  h1.remove();
 }
 
-let cart = [
-  { name: 'Dr Martin', price: 8000, quantity: 1 },
-  { name: 'Dr Sandeep', price: 4000, quantity: 2 },
-];
+z.onclick = deleteTask;
 
-const result = calculateTotal(cart, 0.2);
-console.log(`Your full and final payment is : ${result}`);
-
+// let display  = document.createElement("h1");
+// display.innerText = "This is a new H1";
+// document.body.append(display);
+// document.body.prepend(display);
