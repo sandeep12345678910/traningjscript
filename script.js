@@ -1,207 +1,194 @@
-// variables
 
+//Variables
 //var
 // var x = 90;
 // console.log(x);
-
-// var x = 180;
+// var x = 100;
 // console.log(x);
 
 //let
-// let y = 90;
+// let y = 600;
 // console.log(y);
 
-// cannot be redeclared
-// let y = 10;
-
-//can be updated
-// y = 20;
+// y = 4500;
 // console.log(y);
 
 //const
-// const z = 10;
-// console.log(z);
+// const result = 90;
+// console.log(result);
 
-//cannot be redeclared
-//cannot be updated
-// z = 9;        // --- error occurs
-// console.log(z);
+// result = 67;
+// console.log(result);
 
-//Date types in JavaScript
-//string
-// const output = "Hello World!";
+//Data Types in JavaScript
+//String
+// const output = "Ram Thapa";
+// console.log(output);
 // console.log(typeof output);
 
-//number
+//Number
 // const result = 90;
 // console.log(result);
 // console.log(typeof result);
 
 //float
-// const result =3.67;
-// console.log(result);
-// console.log(typeof result);
+// const x = 3.56;
+// console.log(x);
+// console.log(typeof x);
 
-// undefined
+//undefined
 // let y;
 // console.log(y);
 // console.log(typeof y);
 
-// null
-// let y = null;
-// console.log(y);
-// console.log(typeof y);
+//null
+// const x = null;
+// console.log(x);
+// console.log(typeof x);
 
-// boolean
-// let y = true;
-// console.log(y);
-// console.log(typeof y);
+//Boolean
+// const isTrue = true;
+// console.log(isTrue);
+// console.log(typeof isTrue);
 
 //BigInt
-// let y = 345346456445n;
-// console.log(y);
-// console.log(typeof y);
+// const result = 34663778965n;
+// console.log(result);
+// console.log(typeof result);
 
-// Symbol
-// const y = Symbol("Hi!");
-// console.log(y);
-// console.log(typeof y);
+//Symbol
+// const output = Symbol("Hello World");
+// console.log(output);
+// console.log(typeof output);
 
 // let x = 8.68;
 // console.log(x);
 // console.log(typeof x);
 
-// Manual Type Consversion
-// const result = "1233";
+//Type ConverSion
+// const result = "123";
 // const output = Number(result);
-
-// console.log(result);
-// console.log(typeof result);
 // console.log(output);
 // console.log(typeof output);
 
-///////
-
-// const result = "1233";
+// const result = "673";
 // const output = parseInt(result);
-
-// console.log(result);
-// console.log(typeof result);
 // console.log(output);
 // console.log(typeof output);
 
-////////
-
-// const result = "6.78";
+// const result = "6.56";
 // const output = parseFloat(result);
-
-// console.log(result);
-// console.log(typeof result);
 // console.log(output);
 // console.log(typeof output);
 
-////////////
 // const result = 678;
-// const output = String(result);
-
+// const output = String(result)
 // console.log(output);
 // console.log(typeof output);
 
 // const result = 678;
 // const output = result.toString();
-
 // console.log(output);
 // console.log(typeof output);
 
-//////
 // const isMarried = false;
 // const ans = String(isMarried);
-
 // console.log(ans);
 // console.log(typeof ans);
 
-//Variables
-//Objects
+//Object Types
 
-// const obj={
-//     name: "Ashish Thapa",
-//     age: 21,
-// }
+// const obj = {
+//   name: "Ram Thapa",
+//   age: 34,
+//   isMarried: false,
+//   occupation: "Agriculture",
+// };
+
+// console.log(obj);
 // console.log(typeof obj);
 
 // const arr = [3, 4, 5, 6, 7];
+// console.log(arr);
 // console.log(typeof arr);
 
 // const date = new Date();
 // console.log(date);
 // console.log(typeof date);
 
+// const result = 1+"1"
+// console.log(result)
+// console.log(typeof result);
+
+// const result = 4 - "2";
+// console.log(result);
+// console.log(typeof result);
+
 //String Method
 
 // const result = "Hello World";
 // //length
 // console.log(result.length);
-
-// //chatAt
-// console.log(result.charAt(4));
-
-// //indexOf
+// //charAt
+// console.log(result.charAt(2));
+// //indexof
 // console.log(result.indexOf("o"));
-
 // //lastIndexOf
 // console.log(result.lastIndexOf("o"));
-
-// //toLowerCase
+// //lowerCase
 // console.log(result.toLowerCase());
-
-// //toUpperCase
+// //upperCase
 // console.log(result.toUpperCase());
-
 // //replace
 // console.log(result.replace("World", "everyone"));
-
 // //includes
 // console.log(result.includes("World"));
-
 // //slice
 // console.log(result.slice(1, 6));
+// //concat
+// console.log(result.concat("I Love JavaScript"));
 
-//concat
-// console.log(result.concat(" " + "I love JS"));
-
-// //let output = "         B  C  A"
-// let output = "    BCA";
-// console.log(output.trim())
+// let output = "        Hello Students";
+// console.log(output.trim());
 
 // //split
-// console.log(result.split(" "))
+// console.log(result.split(" "));
 
-// //concatination
+//concatination
 // let x = "Hello World";
-// let y = "I love JS!";
-// let z = "Because it's fun";
+// let y = "I Love JavaScript!";
+// let z = "Kinaki I love FrontEnd!";
+
 // console.log(x + " " + y + " " + z);
 
-// const a = 80,
-//   b = 60;
-
+// const a = 90;
+// const b = 80;
 // const result = a + b;
-// // console.log("The sum of two number is:" + result);
-// console.log(`The sum of two number is: ${result}`);
+// console.log("The Sum of two number is:" + result);
+// console.log(`The Sum of Two number is: ${result}`);
 
-// Assignment Operator
-// let y = 80;
-// y += 10;
-// console.log(y);
+// "http://localhost:5000/api/user"+id
 
-//
+// `http://localhost:5000/api/user${id}`
+
+// let y = 90;
+// y = y+10;
+// console.log(y)
+
+// let x = 70;
+// x += 50;
+// console.log(x)
+
 // let a = 10;
 // let b = 5;
-// let c = "10";
-// console.log(a == c);
+// let c = "10"
+
+// console.log(a == c)
 // console.log(a === c);
-// console.log(a != b);
-// console.log(a !== c);
+// console.log(a !=b);
+// console.log(a !=c);
+// console.log(a>b)
+// console.log(a < b);
 
 // let ageGroup = 18;
 // console.log(ageGroup >= 18 ? "You can vote" : "You can't");
@@ -220,188 +207,281 @@
 // delete obj.age;
 // console.log(obj);
 
-// ////
-// const myOBJ = {
-//     name: "Sita Devi",
-//     age: 56,
-//   };
+//od number
 
-//   delete myOBJ.age;
-//   console.log(obj);
+// let email = "ramthapa@gmail.com";
+// let password = "999999999";
 
-// let email = "ashishthapa@gmail.com";
-// let password = "password";
-
-// if (email === "ashishthapa@gmail.com" && password === "password") {
-//   console.log("Login Successfull!");
+// if (email === "ramthapa@gmail.com" && password === "999999999") {
+//   console.log("Login SuccessFully!");
 // } else {
-//   console.log("Invalid Credentials");
+//   console.log("Invalid Credentials!");
 // }
 
-// SEE grade check
-
-// let grade = 98;
-
-// if (grade > 90) {
-//   console.log("A+");
-// } else if (grade >= 80 && grade <= 90) {
-//   console.log("A");
-// } else if (grade >= 70 && grade <= 80) {
-//   console.log("B+");
-// } else if (grade >= 60 && grade <= 70) {
-//   console.log("B");
-// } else if (grade >= 50 && grade <= 60) {
-//   console.log("C+");
-// } else if (grade >= 40 && grade <= 50) {
-//   console.log("C+");
+//See Grade Check
+// let grade = 85;
+// if (grade >= 90) {
+//   console.log("Grade:A+");
+// } else if (grade >= 80) {
+//   console.log("Grade:A");
+// } else if (grade >= 70) {
+//   console.log("Grade:B+");
+// } else if (grade >= 60) {
+//   console.log("Grade:B");
+// } else if (grade >= 50) {
+//   console.log("Grade:c");
+// } else if (grade >= 40) {
+//   console.log("Grade:D");
 // } else {
-//   console.log("Non Graded");
+//   console.log("Failed");
 // }
 
+//weather
 // let weather = "rainy";
-
 // if (weather === "sunny") {
-//   console.log("Today is a sunny day");
+//   console.log("Today is a sunny Day");
 // } else if (weather === "winter") {
-//   console.log("Today is a cold day");
+//   console.log("k Yo mahina jado ko hota");
+// } else if (weather === "cloudy") {
+//   console.log("Aja Badal Lagekochata");
 // } else if (weather === "rainy") {
-//   console.log("Today is a rainy day!");
+//   console.log("Little bit rain");
 // } else {
-//   console.log("Invalid Weather!");
+//   console.log("Invalid weather");
 // }
 
-// const d = new Date().getDay();
+//switch
 
-// switch (d) {
-//   case 0:
-//     console.log("Today is sunday!");
+// let role = "super admin";
+// switch (role) {
+//   case "buyer":
+//     console.log("You can only buy product");
 //     break;
 
-//   case 1:
-//     console.log("Today is monday!");
+//   case "seller":
+//     console.log("You can sell your product");
 //     break;
 
-//   case 2:
-//     console.log("Today is tuesday!");
+//   case "admin":
+//     console.log("You can add your product");
 //     break;
 
-//   case 3:
-//     console.log("Today is wednesday!");
-//     break;
-
-//   case 4:
-//     console.log("Today is thrusday!");
-//     break;
-
-//   case 5:
-//     console.log("Today is friday!");
-//     break;
-
-//   case 6:
-//     console.log("Today is saturday!");
+//   case "super admin":
+//     console.log("You can access everything");
 //     break;
 
 //   default:
-//     console.log("Invalid weather");
+//     console.log("Invalid Role");
 // }
 
+// let date = new Date().getDay();
+// switch (date) {
+//   case 0:
+//     console.log("Today is a Sunday");
+//     break;
+//   case 1:
+//     console.log("Today is a Monday");
+//     break;
+//   case 2:
+//     console.log("Today is a Tuesday");
+//     break;
+//   case 3:
+//     console.log("Today is a Wednesday");
+//     break;
+//   case 4:
+//     console.log("Today is a Thursday");
+//     break;
+
+//   case 5:
+//     console.log("Today is a Friday");
+//     break;
+
+//   case 6:
+//     console.log("Today is a Saturday");
+//     break;
+
+//   default:
+//     console.log("Invalid day");
+// }
+
+//status
 // let status = 200;
 
 // switch (status) {
 //   case 201:
 //     console.log("Created");
 //     break;
-
 //   case 400:
 //     console.log("Bad Request");
 //     break;
 
 //   case 401:
-//     console.log("Unauthorized");
+//     console.log("UnAuthorized");
 //     break;
 
 //   case 403:
-//     console.log("Forbidden");
+//     console.log("ForBidden");
+//     break;
+
+//   case 500:
+//     console.log("Internal server Error");
 //     break;
 
 //   case 200:
 //     console.log("Ok");
 //     break;
 
-//   case 500:
-//     console.log("Internal server error");
-//     break;
-
 //   default:
-//     console.log("Error");
+//     console.log("Invalid status");
+//     break;
+// }
+
+//loop
+// for loop
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log("I Love Javascript" + i);
 // }
 
 // for (let i = 1; i <= 10; i++) {
-//   console.log(`2 * ${i} = ${2 * i}`);
-// }
-// for (let i = 0 ; i <20; i ++) {
-//   console.log('the even number are:${i}');
-
+//   console.log(`2*${i} = ${2 * i}`);
 // }
 
-/*
-====
-ARRAY
-====
-*/
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`The even Number are:${i}`);
+//   }
+// }
 
-// const arr = [1, 2, 3, 4, 5];
-// console.log(arr);
-// console.log(arr[2]);
-// console.log(typeof arr)
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(`The Odd Number are:${i}`);
+//   }
+// }
 
-// let arr = [1, 2, 3, 4, 5, 3]; //data structure
+// const arr = [3, 4, 5, 6, 7];
 
-//Splice //removes the data from array
-// arr.splice(1,3);
-// console.log(arr);
-
-//slice //prints the defined set
-// let sliced = arr.slice(1,3); //prints index 1 and 2
-// console.log(sliced);
-
-// check index
-// console.log(arr.indexOf(3))
-// console.log(arr.lastIndexOf(3))
-
+// let sum = 0;
 // for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
+//   sum += arr[i];
 // }
 
-// //push
-// let newArr = arr.push(12);
+// console.log(`The SUm of Array is :${sum}`);
+
+//While Loop
+// let i = 0;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+//do while
+// let i = 0;
+// do {
+//   console.log("I Love JavaScript" + i);
+//   i++;
+// } while (i <= 10);
+
+// const arr = [4, 3, 5, 6, 7, 8];
+// arr.push("Apple", "Banana");
 // console.log(arr);
 
-// //pop
-// arr.pop(12);
+//pop
+// const arr = [4, 3, 5, 6, 7, 8];
+// const result = arr.pop();
 // console.log(arr);
 
-// //push
-// arr.shift(12);
+//shift
+// const arr = [4, 3, 5, 6, 7, 8];
+// const result = arr.shift();
 // console.log(arr);
 
-// //pop
-// arr.unshift(12);
+//unshift
+// const arr = [4, 3, 5, 6, 7, 8];
+// const result = arr.unshift(9);
 // console.log(arr);
+
+//splice
+// const arr = [3, 4, 5, 6, 7, 8, 9];
+// arr.splice(1, 4, "Apple");
+// console.log(arr);
+
+//slice
+// const arr = [9, 12, 6, 3, 4, 7, 2];
+// arr.splice(1, 3);
+
+// console.log(arr);
+
+//reverse
+
+// const arr = [9, 12, 6, 3, 4, 7, 2];
+// arr.reverse();
+// console.log(arr);
+
+//indexOf
+// const arr = [9, 12, 6, 3, 4, 7, 2, 9];
+// const result = arr.indexOf(9);
+// console.log(result);
+
+// const arr = [8, 9, 7, 6];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+
+// let result = sum * 2;
+
+// console.log(`The Sum of array is:${sum}`);
+// console.log(`The total of sum which is multiply by 2 is:${result}`);
+
+// function myFunc(name) {
+//   console.log(`Hello everyone my name is:${name}`);
+// }
+
+//Array
+// let ans = [3, 4, 5, 6, 7, 8, "Apple", "Banana"]; //data structure
+// console.log(ans[3]);
+
+// let arr = [3, 6, 8, 9, 2, 3, 1];
+
+//indexOf
+// let output = arr.indexOf(3);
+// console.log(output);
+
+//lastIndexOf
+// let output = arr.lastIndexOf(3);
+// console.log(output);
+
+//splice
+// arr.splice(1, 3);
+// console.log(arr);
+
+//slice
+
+//length
+// console.log(arr.length);
+//push
+// let result = arr.push(12);
+// console.log(arr);
+
+//pop
+// arr.pop();
+// console.log(arr);
+
+//shift
+// arr.shift()
+// console.log(arr)
+
+//unshift
+// arr.unshift(14)
+// console.log(arr)
 
 //includes
-// if (arr.includes(4)){
-//     console.log("4 is present in array")
-// }
-
 // let result = arr.includes(4);
 // console.log(result);
 
-//Join
-// const output = ["JS", "is", "Fun"];
+// const output = ["Hello", "World", "JavaScript", "is", "Fun"];
 // console.log(output.join(" "));
-
-//////
 
 // let arr = [];
 // let sum = 0;
@@ -409,133 +489,128 @@ ARRAY
 // for (let i = 1; i <= 10; i++) {
 //   arr.push(i);
 // }
+
 // console.log(arr);
 
-// for (let i = 0; i < arr.length; i++) {
+// for (let i = 1; i < arr.length; i++) {
 //   sum += arr[i];
 // }
-// console.log(`The sum of the given numbers is ${sum}`);
 
-/////OBJECTS IN JS
+// let result = sum * 2;
 
+// console.log(`The Sum of arr is:${sum}`);
+// console.log(`The multiply of sum is:${result}`);
+
+//Object
 // const person = {
-//   name: "Ashish",
-//   age: 21,
+//   name: "John Doe",
+//   age: 24,
+//   occupation: "agriculture",
+//   education: "Bsc hons",
+//   isMarried: false,
 //   address: {
-//     street: "Satungal",
-//     city: "Kathamandu",
+//     street: "Dillibazar",
+//     city: "kathmandu",
 //     country: "Nepal",
 //   },
-//   occupation: "Student",
-//   education: "BCA",
-//   isMarried: false,
+
 //   greet: function () {
-//     console.log(`Hello, I am ${this.name} and i am ${this.age} years old!`);
+//     console.log(`Hello My name is:${this.name}.And I am ${this.age} years old`);
 //   },
 // };
-// person.greet();
 
-// //Destructuring
 // const {
 //   name,
 //   age,
+//   education,
+//   occupation,
 //   isMarried,
 //   address: { street, city, country },
 // } = person;
+// console.log(name, age, education, occupation, isMarried, street, city, country);
+// person.greet();
 
-// console.log(name, age, isMarried, street, city, country);
+//function
 
-////Function in JavaScript
-// function myFunction(){
-//     console.log("Hey Function");
-// }
-
-// myFunction();
-
-// function sum(a, b) {
-//   return a + b;
-// }
-
-// console.log(`The sum is ${sum(2, 4)}`);
-
-// function Radius(radius) {
+// function myFunc(radius) {
 //   return Math.PI * radius * radius;
 // }
 
-// console.log(`The area of circle is ${Math.round(Radius(6), 4)}`);
+// let ans = myFunc(5);
+// console.log(`The Area of circle is:${ans}`);
 
-// Function to calculate the sum of provided numbers
-// function calculateTotal(...numbers) {
-//     return numbers.reduce((sum, number) => sum + number, 0);
-// }
-
-// // Example usage
-// const sum = calculateTotal(1, 2, 3, 4, 5);
-// console.log(`The sum is: ${sum}`);
-
-// function calculateTotal(cartItems, taxRate) {
+// //CalculateTotal
+// function CalculateTotal(cartItems, taxRate) {
 //   let total = 0;
-//   for (i = 0; i < cartItems.length; i++) {
+//   for (let i = 0; i < cartItems.length; i++) {
 //     total += cartItems[i].price * cartItems[i].quantity;
 //   }
 //   total += total * taxRate;
 //   return total;
 // }
-
 // let cart = [
-//   { name: "Dr Martin", price: 8000, quantity: 2 },
-//   { name: "SB Dunk", price: 4000, quantity: 3 },
+//   { name: "Dr Martin", price: 8000, quantity: 1 },
+//   { name: "SB Dunk", price: 4000, quantity: 2 },
+// ];
+// const result = CalculateTotal(cart, 0.02);
+// console.log(`Your full and final payment is:${result}`);
+
+// const arr = [4, 3, 5, 6, 7, 8, 9, 1, 2];
+// arr.forEach((value)=>{
+//       value +=20
+//       console.log(value)
+// })
+
+// console.log(arr)
+
+// let output = arr.every((value) => value > 2);
+// console.log(output);
+
+// const ans = arr.forEach((value) => value * 5);
+// console.log(ans);
+
+//find
+// let result = arr.find((value, index) => value > 2);
+
+// console.log(result);
+
+//filter
+// let result = arr.filter((value, index) => value > 6);
+
+// console.log(result);
+
+// const products = [
+//   { name: "Laptop", price: 120000, inStock: true },
+//   { name: "Phone", price: 120000, inStock: false },
+//   { name: "Tab", price: 120000, inStock: true },
 // ];
 
-// const result = calculateTotal(cart, 0.02);
+// let show = products.filter((value, index) => value.inStock === false);
+// console.log(show);
 
-// console.log(`your full and final payment is:${result}`);
+// const products = [
+//   { name: "Laptop", price: 120000, inStock: true },
+//   { name: "Phone", price: 30000, inStock: false },
+//   { name: "Tab", price: 40000, inStock: true },
+// ];
 
-// function convert() {
-//   const meterInput = document.getElementById("meterInput").value;
-//   const result = meterInput * 3.28084;
-//   document.getElementById(
-//     "result"
-//   ).textContent = `${meterInput} meters is equal to ${result.toFixed(2)} feet`;
-// }
+// let show = products.reduce((total, value) => total + value.price, 0);
 
-// function myFunction(){
-//   let a = prompt("Enter first number?");
-//   let b = prompt("Enter second number?");
+// console.log(show);
 
+// function myFunc() {
+//   let a = prompt("Enter first Number?");
+//   let b = prompt("Enter second Number?");
 //   let result = Number(a) + Number(b);
-//   if(result){
-//     alert(`The sum of two numbers is: ${result}`);
+//   if (result) {
+//     alert(`The Sum of Two number is: ${result}`);
 //   }
-
 // }
 
-// myFunction();
+// myFunc();
 
-//Global Scoping
-// var x = 90;
-// let y = 70;
-// const z = 30;
-
-// function myPrint() {
-//   console.log(x, y, z);
-// }
-
-// myPrint();
-
-//Function Scope
-// function myPrint() {
-//   var x = 90;
-//   let y = 70;
-//   const z = 30;
-//   console.log(x, y, z);
-// }
-
-// myPrint();
-
-//Scope defined inside a block of conditional statement
-//Block Scope
-// function myPrint() {
+//Scoping
+// function myFunc() {
 //   if (true) {
 //     var x = 90;
 //     let y = 70;
@@ -546,63 +621,46 @@ ARRAY
 //   console.log(x);
 // }
 
-// myPrint();
+// myFunc();
 
-//var can be used as a function scope
-//let and const cannot be used as function scope, it can only be ued inside the defined block
+//DOM
 
-//////DOM
-// console.log(document.body);
-
-//Id Selector
+//
 // let result = document.getElementById("hello");
-
-// result.innerText = "I Love JS!";
+// result.innerText = "I have many Proof";
 // result.style.backgroundColor = "red";
 // result.style.color = "white";
 // result.style.textAlign = "center";
-// console.log(result);
 
-// //Class Selector
 // let output = document.getElementsByClassName("myClass")[0];
-// output.innerText = "How are you?";
-// output.style.backgroundColor = "aqua";
-// output.style.color = "green";
+
+// output.innerText = "Yo bramandama hami ago ko jhilko";
+// output.style.backgroundColor = "blue";
+// output.style.color = "white";
 // output.style.textAlign = "center";
-// console.log(output);
 
-// //Class Selector
 // let ans = document.getElementsByClassName("myClass");
-// ans[1].innerText = "Who are you?";
-// ans[1].style.backgroundColor = "blue";
-// ans[1].style.color = "white";
+
+// ans[1].innerText = "It's gone a better";
+// ans[1].style.backgroundColor = "yellow";
+// ans[1].style.color = "black";
 // ans[1].style.textAlign = "center";
-// console.log(ans);
 
-// //Tag Selector
-// let res = document.getElementsByTagName("span");
+// let show = document.getElementsByTagName("span");
 
-// res[0].style.backgroundColor = "brown";
-// res[0].style.color = "white";
-// res[0].style.textAlign = "center";
+// show[0].innerText = "Haina k ho yesto yo,Chhaka parchu";
+// show[0].style.backgroundColor = "gray";
+// show[0].style.color = "white";
+// show[0].style.textAlign = "center";
 
-// console.log(res);
+// let x = document.getElementsByTagName("span");
 
-// let newRes = document.getElementsByTagName("span");
+// x[1].innerText = "Kinanki Nepal ma oppurtunities yekdamai kam cha";
+// x[1].style.backgroundColor = "pink";
+// x[1].style.color = "white";
+// x[1].style.textAlign = "center";
 
-// newRes[1].style.backgroundColor = "aquamarine";
-// newRes[1].style.color = "red";
-// newRes[1].style.textAlign = "center";
-
-// console.log(newRes);
-
-// //////
-
-// let x = document.getElementsByName("email");
-// // let y = document.getElementsByName("password");
-// console.log(x);
-
-// let y = document.querySelector("#add");
+// let y = document.querySelector("#btnAdd");
 // y.style.backgroundColor = "blue";
 // y.style.color = "white";
 // y.style.padding = "2vmax 4vmax";
@@ -610,137 +668,355 @@ ARRAY
 // y.style.border = "none";
 
 // y.setAttribute("class", "meroClass");
+// console.log(y.getAttribute("class"));
 
-// let z = document.querySelector(".delete");
-// z.style.backgroundColor = "red";
-// z.style.color = "white";
-// z.style.padding = "2vmax 4vmax";
-// z.style.cursor = "pointer";
-// z.style.border = "none";
-
-// y.addEventListener("click", () => {
-//   let display = document.createElement("h1");
-//   display.innerText = "This is a new H1";
-//   document.body.append(display);
-// });
+// let v = document.querySelector(".btnDelete");
+// v.style.backgroundColor = "red";
+// v.style.color = "white";
+// v.style.padding = "2vmax 4vmax";
+// v.style.cursor = "pointer";
+// v.style.border = "none";
 
 // function addTask() {
 //   let display = document.createElement("h1");
-//   display.innerText = "This is a new H1";
-//   document.body.append(display);
+//   display.innerText = "Task 1";
+//   document.body.prepend(display);
 // }
-// y.onclick = addTask;
 
-// function deleteTask(){
+// function deleteTask() {
 //   let h1 = document.querySelector("h1");
 //   h1.remove();
 // }
 
-// z.onclick = deleteTask;
+// y.onclick = addTask;
+// v.onclick = deleteTask;
 
-// let display  = document.createElement("h1");
-// display.innerText = "This is a new H1";
-// document.body.append(display);
-// document.body.prepend(display);
+// let result = document.querySelectorAll("button");
+// result[0].style.backgroundColor = "red";
+// result[0].style.color = "white";
+// result[0].style.padding = "2vmax 4vmax";
+// result[0].style.border = "none";
 
-// let btn  = document.querySelectorAll("button");
-// // console.log(btn);
-// btn[0].style.backgroundColor = "blue";
-// btn[0].style.border = "none";
-// btn[0].style.borderRadius = "6px";
-// btn[0].style.color = "white";
-// btn[0].style.padding = "12px 16px";
+// let output = document.querySelectorAll("button");
+// output[1].style.backgroundColor = "blue";
+// output[1].style.color = "white";
+// output[1].style.padding = "2vmax 4vmax";
+// output[1].style.border = "none";
 
-// btn[1].style.backgroundColor = "red";
-// btn[1].style.border = "none";
-// btn[1].style.borderRadius = "6px";
-// btn[1].style.color = "white";
-// btn[1].style.padding = "12px 16px";
-
-// function myFunction(name, age) {
-//   console.log(`My name is ${name}, and I am ${age} years old.`);
+// function myFunc(name, age) {
+//   console.log(`Hello My name is:${name}.And I am ${age}years old!`);
 // }
-// myFunction("Ashish Thapa", 21);
 
-//Fat Arrow Function
-// const meroFunction = (name, age) => {
-//   console.log(`My name is ${name}, and I am ${age} years old.`);
-// };
-// meroFunction("Ashish Thapa", 21);
+// myFunc("Ram Thapa", 23);
 
-//Advance Array Method
-let arr = [1, 4, 5, 6, 7, 8, 9, 5, 4];
+//Advance Array Method;
 
+const arr = [3, 6, 7, 8, 9, 4, 2, 1];
 //find
-// const myFunction = (value, index) => {
-//   return value > 6;
-// };
-
-// let output = arr.find((value, index) => {
-//   return value > 6;
-// });
 
 // let output = arr.find((value, index) => value > 6);
+// console.log(output);
 
-// //filter
+// const products = [
+//   { id: 1, name: "Martin", price: 8000, inStock: true },
+//   { id: 2, name: "TimberLand", price: 10000, inStock: true },
+//   { id: 3, name: "SB Dunk", price: 8000, inStock: false },
+//   { id: 4, name: "Air force 1", price: 7000, inStock: true },
+// ];
+
+// let result = products.find((value, index) => value.inStock);
+// console.log(result);
+
+//filter
 // let output = arr.filter((value, index) => value > 6);
 // console.log(output);
 
-//
-const products = [
-  { id: 1, name: "Dr Martin", price: 5000, inStock: true },
-  { id: 2, name: "SB Dunk", price: 7000, inStock: false },
-  { id: 3, name: "Air Force 1", price: 10000, inStock: true },
-  { id: 4, name: "Travis Scott", price: 9000, inStock: true },
-];
+// const products = [
+//   { id: 1, name: "Martin", price: 8000, inStock: true },
+//   { id: 2, name: "TimberLand", price: 10000, inStock: true },
+//   { id: 3, name: "SB Dunk", price: 8000, inStock: false },
+//   { id: 4, name: "Air force 1", price: 7000, inStock: true },
+// ];
 
-//find
-// let answer = products.find((value, index) => value.inStock);
-// console.log(answer);
+// let result = products.filter((value, index) => !value.inStock);
+// console.log(result);
 
-// //Filter
-// let answer = products.filter((value, index) => !value.inStock);
-// console.log(answer);
-
-// // //Some
-// let answer = products.some((value, index) => !value.inStock);
-// console.log(answer);
-
+//some
 // let output = arr.some((value, index) => value > 6);
 // console.log(output);
 
-// //every
-// let answer = products.every((value, index) => !value.inStock);
-// console.log(answer);
+// const products = [
+//   { id: 1, name: "Martin", price: 8000, inStock: true },
+//   { id: 2, name: "TimberLand", price: 10000, inStock: true },
+//   { id: 3, name: "SB Dunk", price: 8000, inStock: false },
+//   { id: 4, name: "Air force 1", price: 7000, inStock: true },
+// ];
+
+// let result = products.some((value, index) => !value.inStock);
+// console.log(result);
 
 // let output = arr.every((value, index) => value > 6);
 // console.log(output);
 
-//foreach
-//it cannot return array
-// let answer = products.forEach((value, index) => !value.inStock);
-// console.log(answer);
+// const products = [
+//   { id: 1, name: "Martin", price: 8000, inStock: true },
+//   { id: 2, name: "TimberLand", price: 10000, inStock: true },
+//   { id: 3, name: "SB Dunk", price: 8000, inStock: false },
+//   { id: 4, name: "Air force 1", price: 7000, inStock: true },
+// ];
 
-// let output = arr.forEach((value, index) => value * 2);
+// let result = products.every((value, index) => !value.inStock);
+// console.log(result);
+
+//forEach
+// arr.forEach((value, index) => console.log(value + 2));
+
+// const products = [
+//   { id: 1, name: "Martin", price: 8000, inStock: true },
+//   { id: 2, name: "TimberLand", price: 10000, inStock: true },
+//   { id: 3, name: "SB Dunk", price: 8000, inStock: false },
+//   { id: 4, name: "Air force 1", price: 7000, inStock: true },
+// ];
+// products.forEach((value, index) => console.log(value.name));
+
+// let result = arr.map((value, index) => value * 4);
+// console.log(result);
+
+//
+// let btn = document.querySelectorAll("button");
+// btn[0].innerText = "HeyBtn";
+// btn[0].style.backgroundColor = "blue";
+// btn[0].style.color = "white";
+// btn[0].style.padding = "2vmax 4vmax";
+// btn[0].style.border = "none";
+
+// let output = document.querySelectorAll("button");
+// output[1].innerText = "clickME";
+// output[1].style.backgroundColor = "red";
+// output[1].style.color = "white";
+// output[1].style.padding = "2vmax 4vmax";
+// output[1].style.border = "none";
+
+// function myFunc(name, age) {
+//   console.log(`Hello My name is: ${name}. And i am ${age} years old`);
+// }
+
+// myFunc("Ram Thapa", 23);
+
+// const meroFunc = (name, age) => {
+//   console.log(`Hello My name is: ${name}. And i am ${age} years old`);
+// };
+
+// meroFunc("Sita Devi", 24);
+
+//Advance Array Method
+let newArr = [4, 5, 6, 7, 8, 9, 3, 1, 2];
+// //find
+
+// let output = newArr.find((value, index) => value > 6);
 // console.log(output);
+
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.find((value,index)=>value.inStock)
+// console.log(ans)
+
+//filter
+
+// let output = newArr.filter((value, index) => value > 6);
+// console.log(output);
+
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.filter((value, index) => value.inStock);
+// console.log(ans);
+
+//some
+// let output = newArr.some((value, index) => value > 6);
+// console.log(output);
+
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.some((value, index) => value.inStock);
+// console.log(ans);
+
+//every
+// let output = newArr.every((value, index) => value > 6);
+// console.log(output);
+
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.every((value, index) => value.inStock);
+// console.log(ans);
+
+//forEach
+// let output = newArr.forEach((value, index) => value * 2);
+// console.log(output);
+
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.forEach((value, index) => value.name);
+// console.log(ans);
 
 //map
-// let answer = products.map((value, index) => value.inStock);
-// console.log(answer);
-
-// let output = arr.map((value, index) => value * 2);
+// let output = newArr.map((value, index) => value * 2);
 // console.log(output);
 
-// let answer = products.map((value, index) => value.name);
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
+
+// let ans = products.map((value, index) => value.name);
 // let display = document.createElement("h2");
-// display.innerText = answer;
+// display.innerText = ans;
 // document.body.prepend(display);
 
-//REDUCE
+//reduce
+// let output = newArr.reduce((accum, curValue) => accum + curValue);
+// console.log(output); //single return element
 
-//map
-let output = arr.reduce((accum, curvalue) => accum + curvalue);
-console.log(output);
+// const products = [
+//   { id: 1, name: "Dr Martin", price: 8000, inStock: true },
+//   { id: 2, name: "SB Dunk", price: 9000, inStock: false },
+//   { id: 3, name: "Air Force 1", price: 6000, inStock: true },
+//   { id: 4, name: "Travis Cott", price: 7000, inStock: true },
+// ];
 
-let answer = products.reduce((total, curvalue) => total + curvalue.price, 0);
-console.log(answer); //Single Return
+// let ans = products.reduce((total, curValue) => total + curValue.price, 0);
+// console.log(ans);
+
+// let heading = document.getElementById("heading");
+// let box = document.getElementById("box1");
+// let btnClick = document.getElementById("btnClick");
+// let input = document.querySelector("input");
+
+// btnClick.style.backgroundColor = "blue";
+// btnClick.style.color = "white";
+// btnClick.style.padding = "20px";
+// btnClick.style.border = "none";
+// btnClick.style.cursor = "pointer";
+
+// btnClick.addEventListener("click", () => {
+//   box.classList.add("classBox");
+// });
+
+// btnClick.addEventListener("contextmenu", (e) => {
+//   e.preventDefault();
+//   btnClick.style.backgroundColor = "gray";
+// });
+
+// btnClick.addEventListener("dblclick", () => {
+//   document.body.style.backgroundColor = "black";
+// });
+// btnClick.addEventListener("click", () => {
+//   document.body.style.backgroundColor = "";
+// });
+
+// window.addEventListener("click", (e) => {
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// });
+
+// // window.addEventListener("contextmenu", (e) => {
+// //   e.preventDefault();
+// // });
+
+// box.addEventListener("mouseover", () => {
+//   btnClick.style.transform = "scale(1.1)";
+//   heading.innerText = "Sirkar KP Oli kai hota";
+//   heading.style.backgroundColor = "purple";
+//   heading.style.color = "red";
+// });
+
+// box.addEventListener("mouseout", () => {
+//   btnClick.style.transform = "";
+//   heading.innerText = "";
+//   heading.style.backgroundColor = "";
+//   heading.style.color = "";
+// });
+
+// input.addEventListener("change", (e) => {
+//   console.log(e.target.value);
+//   console.log("changing");
+// });
+
+//Math Object
+// let num = 4.7;
+// let ans = Math.round(num);
+// console.log(ans);
+
+// let output = Math.random();
+// console.log(output);
+
+// let num = 9;
+// let result = Math.sqrt(num);
+// console.log(result);
+
+// let num = 4.9;
+// let result = Math.floor(num);
+// console.log(result);
+
+// let num = 4.2;
+// let result = Math.ceil(num);
+// console.log(result);
+
+// let base = 2;
+// let extonent = 3;
+// let output = Math.pow(base, extonent);
+// console.log(output);
+
+// function Subtract(a, b) {
+//   let result = a - b;
+//   return Math.abs(result);
+// }
+
+// let output = Subtract(2, 5);
+// console.log(output);
+
+// function GenerateOTP() {
+//   let otp = Math.floor(100000 + Math.random() * 900000);
+//   return otp;
+// }
+
+// let ans = GenerateOTP();
+// console.log(ans);
+
+// let num = Math.max(1,3,4,5,6,7,8)
+// console.log(num)
+
+// let result = Math.min(1, 3, 4, 5, 6, 7, 8);
+// console.log(result);
+
+// let now = new Date().getFullYear();
+// console.log(now);
+
+let now = new Date().getMonth();
+console.log(now);
