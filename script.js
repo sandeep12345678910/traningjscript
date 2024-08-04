@@ -645,7 +645,7 @@ const products =[{id:1,name:"sachin",price:8000,instock:true},
 // document.body.prepend(display);
 
 
-// const product =[{id:1,name:"sachin",price:8000,instock:true},
+// const product =[{id:1,name:"sandeep",price:8000,instock:true},
 //     {id:2,name:"ashish",price:9000,instock:true},
 //     {id:1,name:"surya",price:7000,instock:false}
 // ];
